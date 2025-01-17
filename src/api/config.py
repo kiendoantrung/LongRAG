@@ -4,8 +4,8 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     openai_api_key: str
-    data_dir: str = "data"
-    model_name: str = "gpt-4"
+    data_dir: str
+    model_name: str
     
     class Config:
         env_file = ".env"
