@@ -3,9 +3,9 @@ from llama_index.core.workflow import Workflow, step, StartEvent, StopEvent, Con
 from llama_index.core import SimpleDirectoryReader, VectorStoreIndex
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.core.llms import LLM
-from src.docs_processing.splitter import split_doc
-from src.docs_processing.grouper import get_grouped_docs
-from src.retrieval.retriever import LongRAGRetriever
+from docs_processing.splitter import split_doc
+from docs_processing.grouper import get_grouped_docs
+from retrieval.retriever import LongRAGRetriever
 from .events import LoadNodeEvent
 
 class LongRAGWorkflow(Workflow):

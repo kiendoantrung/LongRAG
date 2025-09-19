@@ -1,6 +1,6 @@
 from typing import List, Dict, Optional, Set, FrozenSet
 from llama_index.core.schema import TextNode
-from src.constants import DEFAULT_MAX_GROUP_SIZE
+from constants import DEFAULT_MAX_GROUP_SIZE
 
 
 def group_docs(

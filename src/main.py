@@ -1,11 +1,11 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from src.api.routes import router
-from src.api.config import get_settings, get_llm
+from api.routes import router
+from api.config import get_settings, get_llm
 from contextlib import asynccontextmanager
-from src.workflow.long_rag import LongRAGWorkflow
-from src.constants import DEFAULT_CHUNK_SIZE, DEFAULT_TOP_K, DEFAULT_SMALL_CHUNK_SIZE
+from workflow.long_rag import LongRAGWorkflow
+from constants import DEFAULT_CHUNK_SIZE, DEFAULT_TOP_K, DEFAULT_SMALL_CHUNK_SIZE
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

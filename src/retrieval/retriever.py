@@ -4,7 +4,7 @@ from llama_index.core.vector_stores.simple import BasePydanticVectorStore
 from llama_index.core.schema import QueryBundle, NodeWithScore, TextNode
 from llama_index.core.vector_stores.types import VectorStoreQuery
 from llama_index.core.settings import Settings
-from src.constants import DEFAULT_TOP_K
+from constants import DEFAULT_TOP_K
 
 
 class LongRAGRetriever(BaseRetriever):
